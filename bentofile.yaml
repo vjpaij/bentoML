@@ -1,0 +1,11 @@
+service: "service.py:svc"
+labels:
+  owner: self
+  project: iris
+include:
+- "*.py"
+python:
+  packages:
+    - scikit-learn
+    - pandas
+    - numpy
